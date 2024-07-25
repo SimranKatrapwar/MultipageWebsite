@@ -1,0 +1,180 @@
+/* ///// MEDIA QUERY CSS START ////// */
+/*/////////////////// media query css for mobile start ////////////////*/
+
+@media (min-width:300px) and (max-width:700px) {
+
+    .nav-link,
+    .heading {
+        text-align: center;
+    }
+
+    .heading {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav li:hover .dropdown-menu {
+        margin-left: 5em;
+    }
+
+    .header-social {
+        display: none !important;
+    }
+
+    .detail {
+        display: block;
+    }
+
+    .detail p {
+        margin: 5px 0px 5px 0px !important;
+    }
+
+    .icon-color {
+        color: #000;
+    }
+
+    .about-section .row:nth-child(1) {
+        flex-direction: column-reverse;
+    }
+
+    .about-section .img-abt,
+    .about-section .abt-acimage {
+        display: none;
+    }
+
+    .about-section img:nth-child(2) {
+        margin-top: 30px;
+    }
+
+    .banner-section .pe-15 {
+        padding-right: 0rem;
+    }
+
+    .head-description {
+        text-align: center;
+    }
+
+    .about-page-intro .con-head,
+    .testimonial-page-intro .con-head,
+    .team-page-intro .con-head,
+    .contact-page-intro .con-head {
+        font-size: 3.5em;
+    }
+
+    .service-page-section .service-box .service-img .icon-box {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    .contact-page-section .ac-btn {
+        width: 10em;
+        height: 3em;
+    }
+
+    .contact-page-section .ac-btn:hover::before {
+        width: 10em;
+    }
+}
+
+/*/////////////////// media query css for mobile end ////////////////*/
+
+/* ====================== media query css for landscape mobile start ============================== */
+@media (orientation: landscape) and (max-width: 768px) {
+    /* Styles for landscape orientation on mobile devices */
+    .header-social,
+    .abt-acimage,
+    .img-abt{
+        display: none;
+    }
+
+    .heading{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-nav li:hover .dropdown-menu {
+        margin-left: 10em !important;
+    }
+    
+  }
+/* ====================== media query css for landscape mobile end ================================= */
+
+
+/*/////////////////// media query css for tab start ////////////////*/
+
+@media (min-width:700px) and (max-width:912px) {
+
+    /* Home Page Start */
+    .abt-acimage {
+        bottom: 17%;
+        left: 10%;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .navbar-nav li:hover .dropdown-menu {
+        margin-left: 15em;
+    }
+
+    .head-description,
+    .heading {
+        text-align: center;
+    }
+
+    .client-review-section .img-fluid {
+        width: 100%;
+    }
+
+    .contact-page-section .ac-btn {
+        width: 10em;
+        height: 3em;
+    }
+
+    .contact-page-section .ac-btn:hover::before {
+        width: 10em;
+    }
+
+    /* Home Page End */
+}
+
+/*/////////////////// media query css for tab end ////////////////*/
+
+/*/////////////////// media query css for laptop start ////////////////*/
+
+@media (min-width:1023px) and (max-width:1024px) {
+
+    /* Home Page Start */
+    .abt-acimage {
+        bottom: 21%;
+        left: 40%;
+    }
+
+    .service-page-section .service-box .service-img .icon-box {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    .client-review-section .img-fluid {
+        width: 100%;
+        height: 530px;
+    }
+
+    .contact-page-section .ac-btn {
+        width: 10em;
+        height: 3em;
+    }
+
+    .contact-page-section .ac-btn:hover::before {
+        width: 10em;
+    }
+
+    /* Home Page End */
+}
+
+/*/////////////////// media query css for laptop end ////////////////*/
