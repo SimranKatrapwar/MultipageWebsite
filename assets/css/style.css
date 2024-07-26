@@ -641,6 +641,12 @@ header a:hover {
     font-size: 18px;
 }
 
+.service-section h4 a{
+    color: #000;
+    z-index: 5;
+    position: relative;
+}
+
 .mb-5e {
     margin-bottom: 5rem;
 }
@@ -666,7 +672,6 @@ header a:hover {
 
 .offer__item:hover .offer__icon {
     background: linear-gradient(90deg, #04cf9c -10.59%, #00060c 300.59%);
-    ;
     transform: rotateY(360deg);
 }
 
@@ -1083,6 +1088,12 @@ header a:hover {
 
 .ablog__user--title h5 a {
     color: #000;
+}
+
+.ablog__user--img .img-fluid{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
 }
 
 /* Blog Section End */
