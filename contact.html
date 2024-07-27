@@ -18,7 +18,7 @@
     <!-- //////////// googlefont link ///////// -->
     <link rel="stylesheet" href="assets/css/googlefont.css">
     <!-- //////////// aos link ///////// -->
-    <!-- <link rel="stylesheet" href="assets/css/aos.css"> -->
+    <link rel="stylesheet" href="assets/css/aos.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             <div class="detail">
                 <p class="mb-0 me-5 d-mail">
                     <i class="fa-solid fa-envelope-open-text me-2 text-black"></i>
-                    <a href="mailto:rishigupta20044@gmail.com"> rishigupta20044@gmail.com</a>
+                    <a href="mailto:acwala24x7@gmail.com"> acwala24x7@gmail.com</a>
                 </p>
                 <p class="d-call mb-0">
                     <a href="tel: 76669 98501">
@@ -104,7 +104,7 @@
     <section class="contact-page-section space-extra-bottom" id="contact-page-id">
         <div class="container">
             <div class="row flex-row-reverse">
-                <div class="col-lg-4 col-xl-4 pb-20 pb-lg-0">
+                <div class="col-lg-4 col-xl-4 pb-20 pb-lg-0 aos-animate" data-aos="fade-left" data-aos-duration="1000">
                     <div class="info-box">
                         <div>
                             <h4 class="fw-bold text-decoration-underline">Information :</h4>
@@ -133,14 +133,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-8 col-xl-8">
+                <div class="col-lg-8 col-xl-8 aos-animate" data-aos="fade-right" data-aos-duration="1000">
                     <div class="heading d-flex">
                         <img src="assets/images/output-onlinegiftools.gif">
                         <h1>Write Us A Message</h1>
                     </div>
                     <p class="head-description mt-2">Send Us A Message & We Will Contact You</p>
-                    <form class="form-style2 layout2 ajax-contact" action="https://formspree.io/f/xvgpzjdv"
-                    method="POST" name="contact-form">
+                    <form class="form-style2 layout2 ajax-contact" action="https://formspree.io/f/manwqgrg"
+                    method="POST" name="contact-form">  
+                    <!-- action="https://formspree.io/f/xvgpzjdv" -->
                         <div class="row">
                             <div class="col-12 form-group">
                                 <label for="name">Full Name :</label>
@@ -159,6 +160,7 @@
                                 <textarea name="Message" id="message" placeholder="Your message" class="p-3"
                                     style="border-radius: 10px;" required></textarea>
                             </div>
+                            </div>
                             <div class="col-12 form-group">
                                 <button class="ac-btn mt-4" id="submit-button" name="send">
                                     <i class="fa-solid fa-circle-arrow-right me-2"></i> Send Message
@@ -170,7 +172,7 @@
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-md-10 offset-md-1">
+                <div class="col-md-10 offset-md-1 aos-animate" data-aos="fade-up" data-aos-duration="1500">
                     <div class="map_bind">
                         <iframe class="map"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.692090236955!2d79.12949767510905!3d21.164648580518875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c71b1901b955%3A0xc13665479e2d5fab!2sLanjewar%20Kirana%20Store!5e0!3m2!1sen!2sin!4v1720504770464!5m2!1sen!2sin"
@@ -201,7 +203,7 @@
                         <div class="footer-icon">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
-                        <h6><a href="mailto:rishigupta20044@gmail.com">rishigupta20044@gmail.com</a></h6>
+                        <h6><a href="mailto:acwala24x7@gmail.com">acwala24x7@gmail.com</a></h6>
                     </div>
                 </div>
                 <!-- <div class="col-lg-5 col-md-5 col-12">
@@ -299,11 +301,14 @@
     <!-- //////////// custom js link ///////// -->
     <script src="assets/js/custom.js"></script>
     <!-- //////////// aos link ///////// -->
-    <!-- <script src="assets/js/aos.js"></script> -->
+    <script src="assets/js/aos.js"></script>
     <!-- //////////// jquery link ///////// -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- //////////// jquery slim link ///////// -->
     <script src="assets/js/jquery.slim.min.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
