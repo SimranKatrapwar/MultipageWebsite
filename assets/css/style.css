@@ -241,11 +241,6 @@ header a:hover {
     z-index: 1;
 }
 
-.bounce-y {
-    -webkit-animation: bounce-y 10s infinite linear;
-    animation: bounce-y 10s infinite linear;
-}
-
 @keyframes bounce-y {
     0% {
         -webkit-transform: translateY(0);
@@ -371,6 +366,11 @@ header a:hover {
 
 .banner-section-one .home-ac-icon img {
     width: 100%;
+}
+
+.bounce-y {
+    -webkit-animation: bounce-y 10s infinite linear;
+    animation: bounce-y 10s infinite linear;
 }
 
 @media (max-width: 991.98px) {
