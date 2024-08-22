@@ -208,33 +208,34 @@
                         <h1>Write Us A Message</h1>
                     </div>
                     <p class="head-description mt-2">Send Us A Message & We Will Contact You</p>
-                    <form class="form-style2 layout2 ajax-contact" action="https://formspree.io/f/manwqgrg"
-                    method="POST" name="contact-form">  
+                    <form class="form-style2 layout2 ajax-contact" name="contact-form">  
                     <!-- action="https://formspree.io/f/xvgpzjdv" -->
+                    <!-- action="https://formspree.io/f/manwqgrg" current--> 
                         <div class="row">
-                            <div class="col-12 form-group">
+                            <!-- <div class="col-12 form-group">
                                 <label for="name">Full Name :</label>
-                                <input name="Name" id="name" type="text" placeholder="Your Name" required />
+                                <input name="name" id="from_name" type="text" placeholder="Your Name" required />
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="email">Email Address :</label>
-                                <input name="Email" id="email" type="email" placeholder="Example@domain.com" required />
+                                <input name="email" id="email_id" type="email" placeholder="Example@domain.com" required />
                             </div>
                             <div class="col-md-6 form-group">
                                 <label for="number">Contact No. :</label>
-                                <input name="Phone" id="number" type="text" placeholder="Your number" required />
+                                <input name="phone" id="phone_number" type="text" placeholder="Your number" required />
                             </div>
                             <div class="col-12 form-group">
                                 <label for="message">Message :</label>
-                                <textarea name="Message" id="message" placeholder="Your message" class="p-3"
+                                <textarea name="message" id="message" placeholder="Your message" class="p-3"
                                     style="border-radius: 10px;" required></textarea>
                             </div>
                             </div>
                             <div class="col-12 form-group">
-                                <button class="ac-btn mt-4" id="submit-button" name="send">
+                                <button class="ac-btn mt-4" id="submit-button" name="send" onclick="SendEmail()">
                                     <i class="fa-solid fa-circle-arrow-right me-2"></i> Send Message
                                 </button>
-                            </div>
+                            </div> -->
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeKJoe1nXSsSKYFO-Y3i-2HY6wzbEHA9m14kEtKMVrRR0AiiQ/viewform?embedded=true" width="500" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                         </div>
                         <p class="form-messages mb-0 mt-3"></p>
                     </form>
@@ -378,6 +379,30 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- Contact Form -->
+    <!-- <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init({
+            publicKey: "__DxBc13Zw-uS0haQ",
+        });
+        })();
+
+        function SendEmail(){
+            var params = {
+                from_name : document.getElementById("from_name").value,
+                phone_number : document.getElementById("phone_number").value,
+                email_id : document.getElementById("email_id").value,
+                message : document.getElementById("message").value,
+            }
+            emailjs.send("service_45ks4vl","template_nu94lm5",params).then(function (res){
+                alert("Success!" + res.status);
+            })
+        }
+    </script> -->
 </body>
 
 </html>
