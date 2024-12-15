@@ -379,7 +379,7 @@ header a:hover {
     }
 }
 
-.ac-btn {
+.ac-btn,.popup button {
     border-radius: 10px;
     background: linear-gradient(45deg, #0f2c49, #04cf9c 80%) no-repeat;
     color: #fff;
@@ -2095,3 +2095,92 @@ input {
 /* Contact Page Section End */
 
 /* Contact Page End */
+
+/* PopUp of Special Offer */
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 90%;
+    width: 400px;
+    position: relative;
+}
+
+.popup h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #04cf9c;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.popup p {
+    margin: 0 0 20px;
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+}
+
+.popup p span {
+    color: #04cf9c;
+    font-size: 20px;
+}
+
+.popup ul li{
+    list-style-type: none;
+    text-align: left;
+}
+
+/* .popup button {
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.popup button:hover {
+    background-color: #218838;
+} */
+
+  /* Confetti using circles */
+.confetti {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 1001;
+    animation: confetti-fall 2.5s linear infinite;
+}
+
+@keyframes confetti-fall {
+    0% {
+      transform: translateY(-100vh) translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) translateX(20px) rotate(360deg);
+      opacity: 0;
+    }
+}
+
+/* PopUp of Special Offer */

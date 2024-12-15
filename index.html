@@ -814,6 +814,21 @@
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup">
+          <h2>🎉 Special Offer for Nagpur Residents! 🎉</h2>
+          <p>From <span>TODAY</span> to <span>31st December</span>,<br> ACwala brings you an <span>EXCLUSIVE DEAL</span>!</p>
+          <ul>
+            <li>✅ FREE AC Service for your home or office.</li>
+            <li>✅ Expert technicians right here in Nagpur.</li>
+            <li>✅ Ensure your air conditioner is ready for the summer ahead!</li>
+          </ul>
+          <div class="d-flex justify-content-evenly align-items-center">
+            <button><a href="https://docs.google.com/forms/d/e/1FAIpQLSf2enUju9wi-15pTVg8yvtA3m-EKHuG9GcAon776u0qiVWzLA/viewform" class="text-white">Claim Now</a></button>
+            <button id="close-popup">Close</button>
+          </div>
+        </div>
+      </div>
 
     <!-- //////////// Fontawesome icons link ///////// -->
     <script src="assets/js/all.min.js"></script>
@@ -830,6 +845,42 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        // Generate random confetti as colorful circles
+        function generateConfetti() {
+          const popup = document.querySelector('.popup');
+          for (let i = 0; i < 20; i++) {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.left = `${Math.random() * 100}%`;
+            confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 70%)`;
+            confetti.style.animationDelay = `${Math.random()}s`;
+            popup.appendChild(confetti);
+            setTimeout(() => confetti.remove(), 2500);
+          }
+        }
+    
+        // Get the popup elements
+        const popupOverlay = document.getElementById('popup-overlay');
+        const closePopupButton = document.getElementById('close-popup');
+    
+        // Function to show the popup
+        function showPopup() {
+          popupOverlay.style.display = 'flex';
+          generateConfetti();
+        }
+    
+        // Function to hide the popup
+        function hidePopup() {
+          popupOverlay.style.display = 'none';
+        }
+    
+        // Show the popup every 15 seconds
+        setInterval(showPopup, 15000);
+    
+        // Hide the popup when the close button is clicked
+        closePopupButton.addEventListener('click', hidePopup);
+      </script>
 </body>
 
 </html>
