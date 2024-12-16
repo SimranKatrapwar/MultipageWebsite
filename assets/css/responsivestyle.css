@@ -75,6 +75,11 @@
     .contact-page-section .ac-btn:hover::before {
         width: 10em;
     }
+
+    .popup{
+        width: 90%;
+        padding: 10px;
+    }
 }
 
 /*/////////////////// media query css for mobile end ////////////////*/
@@ -178,3 +183,4 @@
 }
 
 /*/////////////////// media query css for laptop end ////////////////*/
+
